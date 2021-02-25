@@ -1,0 +1,23 @@
+button {
+    color: silver;
+    background-color: darkred;
+    border-radius: 10px;
+}
+
+body {
+    background-color: goldenrod;
+}
+
+h1 {
+    color:darkred;
+}
+
+#rollresult {
+    border: 5px solid black;
+    margin: 10px;
+}
+
+#history {
+    border: 5px solid black;
+    margin: 10px;
+}
