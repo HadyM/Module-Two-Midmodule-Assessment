@@ -1,3 +1,5 @@
+//Change the placement of my event.preventDefault 
+
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector("#rollthedice");
   let historyRoll;
@@ -5,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let numClicks = 0;
 
   button.addEventListener("click", (event) => {
+    event.preventDefault();
     numClicks++;
     const diceList = [
       { dice: "&#9856", value: 1 },
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sumOfDice = document.querySelector("#sum-para");
     const history = document.querySelector("div > ul");
 
-    event.preventDefault();
+    
     let currentRoll = [];
     let currentSum = 0;
 
